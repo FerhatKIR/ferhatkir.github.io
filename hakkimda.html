@@ -103,6 +103,20 @@
         object-fit: cover;
     }
 
+    .dropdown-menu {
+            width: 250px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+        }
+        .social-icons a {
+            color: #000;
+            margin-right: 10px;
+        }
 
 </style>
 
@@ -117,7 +131,26 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
                         <ul class="navbar-nav text-uppercase">
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-menu-button-wide"></i></a></li>
+                            <li class="nav-item dropdown">
+                                <!-- İkona tıklayınca kartı açan düğme -->
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="contactCardButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i>
+                                </a>
+                                <!-- Açılır Kart -->
+                                <div class="dropdown-menu dropdown-menu-start shadow-lg mt-4" aria-labelledby="contactCardButton">
+                                    <div class="contact-info">
+                                        <p><strong>Telefon:</strong> <br>+90 551 123 45 67</p>
+                                        <p><strong>E-posta:</strong> <br> ferhat.kir@outlook.com</p>
+                                        <div class="social-icons">
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-instagram"></i></a>
+                                            <a href="#"><i class="bi bi-twitter"></i></a>
+                                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
                             <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
                             <li class="nav-item"><a class="nav-link" href="henuzYok.html">Takım</a></li>
                             <li class="nav-item"><a class="nav-link" href="projelerim.html">Projelerim</a></li>
