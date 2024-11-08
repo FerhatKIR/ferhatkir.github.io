@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferhat KIR</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+    /* Navbar Özelleştirme */
+    .custom-navbar {
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .custom-navbar .navbar-nav .nav-link {
+        color: #333;
+        font-size: 1rem;
+        margin: 0 0.8rem;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .custom-navbar .navbar-nav .nav-link:hover {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+
+    .project-title {
+        font-size: 3rem;
+        font-weight: bold;
+        }
+
+    .project-meta {
+        font-size: 0.9rem;
+        color: gray;
+        }
+
+    .image-container {
+        height: 490px;
+    }
+
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .dropdown-menu {
+            width: 250px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+        }
+        .social-icons a {
+            color: #000;
+            margin-right: 10px;
+        }
+    
+    /* Altyapı logoları */
+    .tech-card{
+        height: 80px;
+    }
+
+    /* Müşteri Görüşleri Kısmı */
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        background-color: blue !important;
+        border-radius: 50% !important;
+    }
+
+    .carousel-indicators .active {
+        background-color: blue !important;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <div class="container d-flex justify-content-between">
+        <div class="col-md-9 d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar rounded-bottom-5">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                        <ul class="navbar-nav text-uppercase">
+                            <li class="nav-item dropdown">
+                                <!-- İkona tıklayınca kartı açan düğme -->
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="contactCardButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i>
+                                </a>
+                                <!-- Açılır Kart -->
+                                <div class="dropdown-menu dropdown-menu-start shadow-lg mt-4" aria-labelledby="contactCardButton">
+                                    <div class="contact-info">
+                                        <p><strong>Telefon:</strong> <br>+90 551 123 45 67</p>
+                                        <p><strong>E-posta:</strong> <br> ferhat.kir@outlook.com</p>
+                                        <div class="social-icons">
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-instagram"></i></a>
+                                            <a href="#"><i class="bi bi-twitter"></i></a>
+                                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../henuzYok.html">Takım</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../projelerim.html">Projelerim</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../henuzYok.html">Özgeçmiş</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../iletisim.html">İletişim</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../bloglar.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end align-items-center">
+            <a class="navbar-brand ms-3 h2" href="index.html">FERHAT KIR</a>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container my-5">
+        <!-- Başlık ve Açıklama -->
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="project-title mb-4">Web Geliştirme İçin Mac mi Windows mu? Kapsamlı Bir Karşılaştırma</h1>
+                <p class="mb-3 lead">Web geliştirme dünyasında hem Mac hem de Windows, güçlü bir kullanıcı tabanına sahiptir. Her iki işletim sistemi de gerekli tüm araçları ve yazılımları destekler. Ancak, bazı özellikler ve ekosistem farklılıkları, geliştiricilerin tercihlerini etkileyebilir.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-light p-4 rounded-4 shadow-lg">
+                    <h5>Kategori:</h5>
+                    <p class="text-muted">Teknoloji</p>
+                    <h5>Yazar:</h5>
+                    <p class="text-muted">Ferhat KIR</p>
+                    <hr>
+                    <p class="text-muted fst-italic">8 Kasım 2024 Tarihinde Yayınlandı.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Görseller -->
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-6 my-5">
+                <img src="/img/blog1-1.avif" class="rounded-4 img-fluid image shadow-sm">
+            </div>
+            <div class="col-md-6 my-5">
+                <img src="/img/blog1-2.avif" class="rounded-4 img-fluid image shadow-sm">
+            </div>
+        </div>
+    
+        <!-- Alt Açıklama ve Ek Görsel -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-2">Kapsamlı Bir Karşılaştırma</h2>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mt-3">Mac'in Avantajları</h4>
+                    <p><span class="fw-bolder">Tasarım Odaklı Çevre:</span> Mac'in kullanıcı arayüzü ve ekosistemi, genellikle tasarım odaklı bir çalışma ortamı sunar. Bu, özellikle görsel tasarıma önem veren web geliştiricileri için avantajlıdır.<br> <br>
+                    <span class="fw-bolder">Stüdyo Ortamlarıyla Entegrasyon: </span> Mac, Adobe Creative Suite gibi tasarım araçlarıyla daha iyi entegre olur. Bu, tasarım ve geliştirme süreçlerini sorunsuz bir şekilde birleştirmek isteyenler için önemlidir.</p>
+
+                    <p><span class="fw-bolder">Terminal ve Komut Satırı: </span> Mac'in Terminal uygulaması, güçlü ve kullanışlıdır. Unix tabanlı yapısı sayesinde, birçok geliştirici için daha tanıdık bir ortam sunar.<br><br>
+                    <span class="fw-bolder">Ekosistem:</span> MacOS, genellikle daha kapalı bir ekosistem olarak görülse de, web geliştirme için gerekli tüm araçları içerir ve sürekli güncellenir.</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mt-3">Windows'un Avantajları</h4>
+                <p><span class="fw-bolder">Esneklik ve Özelleştirme:</span> Windows, daha açık bir ekosistem sunar ve daha fazla özelleştirme seçeneği sunar. <br><br>
+                <span class="fw-bolder">Oyun Geliştirme:</span> Unity ve Unreal Engine gibi oyun geliştirme motorları, Windows üzerinde daha iyi optimize edilmiştir. Eğer oyun geliştirmeyle ilgileniyorsanız, Windows daha iyi bir seçenek olabilir.</p>
+                <p><span class="fw-bolder">Geniş Donanım Desteği: </span> Windows, daha geniş bir donanım yelpazesini destekler. Bu, daha eski veya özel donanımlarla çalışmanız gerekiyorsa avantaj sağlayabilir.<br><br>
+                <span class="fw-bolder">Büyük Topluluk: </span> Windows, daha geniş bir kullanıcı tabanına sahip olduğu için, daha büyük bir geliştirici topluluğu ve daha fazla kaynak sunar.</p>
+            </div>
+
+            <div class="col-12 mt-5">
+                <p class="lead fw-semibold">Sonuç
+
+                    Aslında, en iyi işletim sistemi tartışması kişisel tercihlere ve projelerin özelliklerine göre değişir. Hem Mac hem de Windows, web geliştirme için güçlü platformlar sunar. Önemli olan, ihtiyaçlarınıza en uygun olanı seçmektir.
+                    
+                    Özetle:
+                    
+                    Tasarım ve görselliğe önem verenler: Mac
+                    Esneklik ve özelleştirme arayanlar: Windows
+                    Oyun geliştirmeyle ilgilenenler: Windows
+                    Büyük bir topluluk ve daha fazla kaynak arayanlar: Windows
+                    Unix tabanlı bir ortamı tercih edenler: Mac <br></p>
+                
+                <p class="lead">Öneri: Her iki işletim sistemini de deneme fırsatınız varsa, kısa bir süreliğine kullanarak hangisinin size daha uygun olduğunu anlamanız daha kolay olacaktır.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <div class="container">
+        <div class="section-spacing bg-dark p-4 p-md-5 rounded-top-5 shadow-lg">
+            <div class="row g-2 align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start text-light">
+                    <p> Ferhat KIR &copy 2024. Tüm hakları saklıdır.</p>
+                    <div><a class="text-secondary" href="">Gizlilik Politikası</a> <span class="text-secondary" >|</span> <a class="text-secondary" href="">Çerezler</a> <span class="text-secondary" >|</span> <a class="text-secondary" href="">SSS</a></div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <ul class="list-inline-dash">
+                        <li><a class="link-hover-line text-light" href="#">Başa Dön<i class="bi bi-arrow-up"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- end row -->
+        </div>
+    </div>
+
+    <script src="/JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
